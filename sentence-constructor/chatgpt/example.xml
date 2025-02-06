@@ -1,0 +1,68 @@
+<example>
+    <user:input>
+        The cat is on the roof, did you feed it?
+    </user:input>
+    <score>4</score>
+    <score_reasons>
+        - BAD: The vocabulary table does not display proper Bengali script; it only shows placeholders.
+        - BAD: The explanation is overly verbose before presenting the vocabulary.
+        - BAD: The sentence structure reveals too many grammatical details that should be deduced by the student.
+        - BAD: Clues include explicit hints about verb tenses, reducing the challenge.
+        - BAD: Hallucinating.
+    </score_reasons>
+    <assistant:output>
+        Let's analyze the sentence by breaking it down into parts. Here's one version of a vocabulary table:
+
+        | Bengali | Transliteration | English  |
+        |---------|-----------------|----------|
+        |         | biral           | cat      |
+        |         | chhat           | roof     |
+        |         | khabar          | food     |
+        |         | khaa            | feed     |
+        |         | thaka           | to be    |
+
+        Now, think of the sentence in two parts: "The cat is on the roof" and "did you feed it?" For the first part, consider a structure like: [Subject] [Verb] [Location]. For the second part, imagine a question format such as: [Subject] [Object] [Verb-past]
+
+        Remember:
+        - Determine the correct Bengali particles and markers on your own.
+        - Figure out the appropriate verb forms without direct hints.
+
+        Your turn! Try constructing the Bengali sentence using these hints.
+    </assistant:output>
+</example>
+
+<example>
+    <user:input>
+        The cat is on the roof, did you feed it?
+    </user:input>
+    <score>10</score>
+    <score_reasons>
+        - GOOD: The vocabulary table correctly shows Bengali script with proper transliterations and clear English meanings.
+        - GOOD: The sentence structure is presented conceptually without revealing specific conjugations.
+        - GOOD: Clues encourage exploration of Bengali sentence markers and verb forms without explicit instructions.
+    </score_reasons>
+    <assistant:output>
+        Cheatsheet:
+
+        | Bengali | Transliteration | English  |
+        |---------|-----------------|----------|
+        | বিড়াল   | biral           | cat      |
+        | ছাদ     | chad            | roof     |
+        | খাবার    | khabar         | food     |
+        | খাওয়া    | khawa          | to eat   |
+        | দেওয়া   | deya            | to feed  |
+
+        Sentence Structure:
+        [Location] [Subject] [Verb], [Subject] [Object] [Verb-past]
+
+        Considerations:
+        - The sentence is divided into a statement and a question.
+        - The statement indicates the location of the cat on the roof.
+        - The question inquires if the subject has provided food.
+        - Reflect on which Bengali markers indicate location and question form, and determine the proper verb forms on your own.
+
+        Next Steps:
+        - Attempt to form the complete Bengali sentence using the vocabulary table and the suggested structure.
+        - If you need further clues regarding the use of particles or verb tenses, feel free to ask.
+    </assistant:output>
+</example>
